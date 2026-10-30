@@ -18,8 +18,7 @@ class WizardTest {
     fun training_test(){
         evilWizard.train()
         assertEquals(25,evilWizard.mana)    //mana of 30-5 ==25
-        assertEquals(11,evilWizard.mana)    //spellPower of 10+1 ==11
-
+        assertEquals(11,evilWizard.spellPower)    //spellPower of 10+1 ==11
 
     }
     @Test
