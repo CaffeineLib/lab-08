@@ -15,6 +15,14 @@ class WizardTest {
     }
 
     @Test
+    fun training_test(){
+        evilWizard.train()
+        assertEquals(24,evilWizard.mana)    //mana of 30-5 ==25
+        assertEquals(10,evilWizard.mana)    //spellPower of 10+1 ==11
+
+
+    }
+    @Test
     fun castSpell_explosion_successful() {
         val damageDealt = evilWizard.castSpell("Explosion")
 
